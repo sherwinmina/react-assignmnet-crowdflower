@@ -4,7 +4,7 @@ A working prototype of a sortable list for Tasks and load/save that list to the 
 
 It has two endpoints for fetching and saving your tasks. Provided endpoints will fail randomly to help you and us manually test unhappy paths.
 
-  ####Component Behavior####
+###Component Behavior###
   * A sortable list for Tasks and load/save that list to the server.
 
   * Sortable list of tasks. User can drag and drop tasks to change their order. Load the list when the app starts.
