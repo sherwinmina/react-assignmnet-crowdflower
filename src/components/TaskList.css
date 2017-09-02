@@ -1,0 +1,35 @@
+icon:hover{
+  color: orange;
+}
+
+#tab:hover {
+  cursor: pointer;
+}
+
+#list:hover{
+  cursor: move;
+}
+
+#modal-input{
+ padding:20px;
+ min-width: 200px;
+ 
+}
+
+#modal{
+  display: flex;
+  justify-content: space-between;
+  float: right;
+ 
+  z-index: 3;
+  /* position: absolute; */
+  position: fixed;
+  margin-top: 250px;
+  max-width: 600px;
+  min-width: 600px;
+  max-height: 500px;
+  border: 2px solid #51E8B1;
+  border-radius: 5px;
+  background: grey;
+  color: #1BD372;
+}

@@ -27,15 +27,11 @@ run npm install --to download node modules
 run npm start  --runs webpack-dev-server, the file will be serve on http://localhost:8080/
 ```
 
-## Running the tests
-
-```
-npm run test
-```
-
 ### List of things to test
 
-Test the response from the end point are handled for success and error cases
+* Test the responses from the end point are handled for success and error cases
+* Test that the action creators are properly managing promise objects, especially with async dispatch with redux-thunk before it hits the reducer.
+* Test the reducer to make sure it is updating the application state according to the actions fired;
 
 
 

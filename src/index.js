@@ -5,11 +5,12 @@ import { createStore, applyMiddleware, compose } from "redux";
 import promise from "redux-promise";
 import reducers from "./reducers";
 import App from "./components/app";
+import thunk from "redux-thunk"
 
 const enhancer = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 );
-const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk, promise)(createStore);
 
 
 ReactDOM.render(
