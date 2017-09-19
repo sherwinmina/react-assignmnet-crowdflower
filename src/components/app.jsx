@@ -18,7 +18,7 @@ class App extends Component {
   componentWillMount() {
     this.props.fetchTasks();
   }
-
+ 
   handleSave() {
     const {all} = this.props.tasks;
     this.props.postData(all)
@@ -76,11 +76,11 @@ class App extends Component {
       <div>
       
         <div style={{height: "60px", background: "#37474F"}}></div>  
-      
+        
           { showModalSuccess ? SuccesModal : null}
           { showModalFailed ? FailedModal : null}
 
-          <Container >
+          <Container>
             <Grid style={{paddingBottom: "20px", paddingTop: "60px"}} >
               <Grid.Column floated="left" width={8}>
               <h1 style={{color:'#607D8B'}}>Tasks </h1>

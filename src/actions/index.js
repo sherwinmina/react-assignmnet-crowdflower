@@ -25,7 +25,7 @@ export function fetchTasks() {
 
 export function addTask(props) {
   let task = "Just Added a Task";
-
+  
   return {
     type: ADD_TASK,
     payload: task

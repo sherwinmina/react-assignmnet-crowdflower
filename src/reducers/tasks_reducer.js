@@ -16,7 +16,8 @@ export default function(state = INITIAL_STATE, action) {
             };
     
     case ADD_TASK:
-      return { ...state, all: [ action.payload, ...state.all] };
+      return { ...state, all: [ action.payload, ...state.all],
+                onfocus: 0 };
     
     case DELETE_TASK:
       

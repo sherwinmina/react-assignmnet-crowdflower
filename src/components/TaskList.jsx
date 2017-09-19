@@ -16,7 +16,7 @@ class TaskList extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+   
   showModal(index, task){
     this.setState({showModal: true, indextoUpdate: index})
   }
@@ -60,6 +60,7 @@ class TaskList extends Component {
             <Form.Input
               style={{width: '350px'}}
               placeholder="Update this Task"
+              
               type="text"
               value={this.state.value}
               onChange={this.handleChange}
